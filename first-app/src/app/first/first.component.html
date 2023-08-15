@@ -1,8 +1,25 @@
 <p>first works!</p>
+
+<!-- String interpolation -->
+
 <h1>{{ name }}</h1>
 <h2>{{age}}</h2>
-<img [src]="imageURL"/>
-<input type="text" [(ngModel)]="text">
 <h3>{{text}}</h3>
+
+<!-- Property binding -->
+
+<img [src]="imageURL"/><br/>
+
+<!-- Two way data binding -->
+
+<input type="text" [(ngModel)]="text">
+
+<!--Event binding-->
+
 <button (click)="name='Mohamed' ; age = 20" >Click</button>
 <button (click)="change()" >Click</button>
+
+<!-- Directives -->
+
+<p *ngIf="display == true">Directive ngIf</p>
+<button (click)="display = !display">Change ngIf</button>
